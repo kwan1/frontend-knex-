@@ -46,7 +46,7 @@ onChangeItem(event){
 	render(){
 		const {isDone , title} = this.state
 		return(
-			<form onSubmit={this.handleSubmit}>
+			<form onSubmit={this.handleSubmit} >
 				<div className = "form-group" >
 				<label htmlFor="title">Title of todo</label>
 
@@ -55,7 +55,8 @@ onChangeItem(event){
 				 className="form-control" 
 				 id="title" 
 				 value={title} 
-				 onChange={this.onChangeItem}/>
+				 onChange={this.onChangeItem}
+				 autoComplete ="off"/>
 				</div>
 			<div className="form-group" />
 			<label htmlFor="isDone">Completed?</label>
